@@ -3,29 +3,34 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
-  grid-gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjusted min-width for a similar layout */
+  grid-gap: 20px; /* Increased gap for better spacing */
 }
-
 .cards > ul > li {
-  border: 1px solid var(--dark-color);
-  background-color: var(--background-color);
+  border: 1px solid #E5E5E5; /* Light grey border similar to the reference */
+  background-color: #FFFFFF; /* White background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensures content doesn't overflow the border radius */
 }
-
 .cards .cards-card-body {
-  margin: 16px;
+  padding: 20px; /* Increased padding for a more spacious layout */
 }
-
 .cards .cards-card-image {
   line-height: 0;
 }
-
 .cards .cards-card-body > *:first-child {
   margin-top: 0;
 }
-
 .cards > ul > li img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: auto;
   object-fit: cover;
+  aspect-ratio: 4 / 3; /* Ensure consistent image aspect ratio */
+}
+.cards .cards-card-header {
+  background-color: #F7F7F7; /* Light grey header background */
+  padding: 12px 20px; /* Padding for header */
+  font-size: 1.25em; /* Larger font size for header */
+  border-bottom: 1px solid #E5E5E5; /* Bottom border for header */
 }
