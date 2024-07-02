@@ -7,14 +7,32 @@
   grid-gap: 20px; /* Increased gap for better spacing */
 }
 .cards > ul > li {
+<<<<<<< Updated upstream
   border: 1px solid #E5E5E5; /* Light grey border similar to the reference */
   background-color: #FFFFFF; /* White background */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   border-radius: 8px; /* Rounded corners */
   overflow: hidden; /* Ensures content doesn't overflow the border radius */
+=======
+  border: 1px solid var(--dark-color);
+  background-color: var(--background-color);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.cards > ul > li:hover {
+  transform: translateY(-10px);
+>>>>>>> Stashed changes
 }
 .cards .cards-card-body {
+<<<<<<< Updated upstream
   padding: 20px; /* Increased padding for a more spacious layout */
+=======
+  padding: 16px;
+  text-align: center;
+>>>>>>> Stashed changes
 }
 .cards .cards-card-image {
   line-height: 0;
@@ -33,4 +51,35 @@
   padding: 12px 20px; /* Padding for header */
   font-size: 1.25em; /* Larger font size for header */
   border-bottom: 1px solid #E5E5E5; /* Bottom border for header */
+}
+
+.cards .cards-card-body h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.cards .cards-card-body p {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.cards .cards-card-body .card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--light-color);
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.cards .cards-card-body .card-footer img {
+  width: 24px;
+  height: 24px;
+}
+
+.cards .cards-card-body .card-footer a {
+  text-decoration: none;
+  color: var(--link-color);
+  font-weight: bold;
 }
